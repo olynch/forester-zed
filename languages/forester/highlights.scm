@@ -11,9 +11,9 @@
 ] @punctuation.bracket
 
 (p "p" @function.builtin)
-(li "li" @markup.list)
-(ul "ul"  @markup.list)
-(ol "ol"  @markup.list)
+(li "li" @function.builtin)
+(ul "ul"  @function.builtin)
+(ol "ol"  @function.builtin)
 (em "em"  @function.builtin)
 (strong "strong" @function.builtin)
 (code "code" @function.builtin)
@@ -22,10 +22,10 @@
 
 (ident (text) @field)
 
-(subtree "subtree" @keyword.function)
+(subtree "subtree" @keyword)
 
-(transclude "transclude" @include)
-(transclude address: (_) @markup.link.url)
+(transclude "transclude" @keyword)
+(transclude address: (_) @string)
 
 (def "def" @keyword)
 (let "let" @keyword)
@@ -44,13 +44,9 @@
 
 (query_tree "query" @keyword)
 
-(import "import" @include)
-(export "export" @include)
-(transclude "transclude" @include)
+(import "import" @keyword)
+(export "export" @keyword)
+(transclude "transclude" @keyword)
 
-
-(li (text) @spell)
-(em (text) @spell)
-(strong (text) @spell)
-(markdown_link label: (text) @spell)
-(method_decl value: (method_body (text) @spell))
+(em (text) @emphasis)
+(strong (text) @emphasis.strong)

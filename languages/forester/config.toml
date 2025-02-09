@@ -2,3 +2,10 @@ name = "Forester"
 grammar = "forester"
 path_suffixes = ["tree"]
 tab_size = 2
+soft_wrap = "bounded"
+preferred_line_length = 100
+brackets = [
+    { start = "{", end = "}", close = true, newline = true },
+    { start = "[", end = "]", close = true, newline = true },
+    { start = "(", end = ")", close = true, newline = true },
+]

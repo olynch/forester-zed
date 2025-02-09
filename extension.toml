@@ -5,3 +5,7 @@ schema_version = 1
 authors = ["Owen Lynch <root@owenlynch.org>"]
 description = "Extension for forester integration"
 repository = "https://github.com/olynch/forester-zed"
+
+[grammars.forester]
+repository = "https://github.com/olynch/tree-sitter-forester/"
+commit = "da632c38ee0e345d99ba288048b7f89802868293"
