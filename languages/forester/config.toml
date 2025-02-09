@@ -1,0 +1,4 @@
+name = "Forester"
+grammar = "forester"
+path_suffixes = ["tree"]
+tab_size = 2

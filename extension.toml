@@ -1,0 +1,7 @@
+id = "forester"
+name = "Forester"
+version = "0.0.1"
+schema_version = 1
+authors = ["Owen Lynch <root@owenlynch.org>"]
+description = "Extension for forester integration"
+repository = "https://github.com/olynch/forester-zed"
