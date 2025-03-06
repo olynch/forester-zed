@@ -8,4 +8,8 @@ repository = "https://github.com/olynch/forester-zed"
 
 [grammars.forester]
 repository = "https://github.com/olynch/tree-sitter-forester/"
-commit = "da632c38ee0e345d99ba288048b7f89802868293"
+commit = "fa78984cc7d4f53c319d398c950072ca1388e7e0"
+
+# [language_servers.forester]
+# name = "Forester LSP"
+# languages = ["Forester"]

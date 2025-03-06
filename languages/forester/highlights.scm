@@ -36,8 +36,10 @@
 (patch object: (_) @constant)
 
 (markdown_link label: (_) @label)
-(markdown_link dest: (_) @text.uri)
-(unlabeled_link (external_link)) @text.uri
+(markdown_link dest: (_) @string)
+(unlabeled_link (external_link) @string)
+(unlabeled_link (addr) @string)
+(import (addr) @string)
 
 (scope "scope" @namespace)
 (put "put" @variable.parameter)
@@ -48,5 +50,15 @@
 (export "export" @keyword)
 (transclude "transclude" @keyword)
 
-(em (text) @emphasis)
-(strong (text) @emphasis.strong)
+(title "title" @keyword)
+(author "author" @keyword)
+(author (text) @string)
+(tag "tag" @keyword)
+(date "date" @keyword)
+
+
+(em (text) @variable)
+(strong (text) @variable)
+
+(inline_math (_) @variable)
+(display_math (_) @variable)
